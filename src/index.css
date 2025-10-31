@@ -263,3 +263,14 @@ h1, h2, h3, h4 {
     width: 20rem;
     height: 20rem;
 }
+
+.mainGraphics pre {
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: #000;
+}
+
+.mainGraphics pre:hover {
+    cursor: pointer;
+}

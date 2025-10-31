@@ -108,27 +108,5 @@
                 "text": "Actividades extracurriculares y espacios de integración social."
             }
         ]
-    },
-    {
-        "questionId": "q6",
-        "question": "5. ¿Qué tipo de apoyo consideras más necesario?",
-        "options": [
-            {
-                "value": "BECAS_APOYOS",
-                "text": "Becas y apoyos económicos."
-            },
-            {
-                "value": "SALUD_MENTAL",
-                "text": "Programas de salud mental y bienestar emocional."
-            },
-            {
-                "value": "FLEXIBILIDAD_METODOS",
-                "text": "Flexibilidad académica y mejores métodos de enseñanza."
-            },
-            {
-                "value": "ACTIVIDADES_INTEGRACION",
-                "text": "Actividades extracurriculares y espacios de integración social."
-            }
-        ]
     }
 ]

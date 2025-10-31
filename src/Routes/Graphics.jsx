@@ -1,16 +1,15 @@
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import Graphic from './../Components/Graphic'
 
 const Graphics = () => {
     const [ data, setData ] = useState([])
-
+    const navigate = useNavigate()
     
 
     useEffect(() => {
-        console.log("useEffect")
-
-        /*axios
+        axios
             .get("https://encuesta-matematicas-para-la-informatica-production.up.railway.app/api/export")
             .then(res => {
                 setData(res.data)
@@ -19,40 +18,18 @@ const Graphics = () => {
             .catch(error => {
                 console.error("No se pudieron obtener los datos exitosamente");
                 console.error(error)
-            });*/
-
-        const obtenerDatos = async () => {
-            try {
-                const respuesta = await axios.get("https://encuesta-matematicas-para-la-informatica-production.up.railway.app/api/export")
-
-                setData(respuesta.data)
-                console.log(data)
-            } catch (error) {
-                console.error("Error al obtener los usuarios: ", error)
-            }
-        }
-
-        obtenerDatos()
+            });
     }, [])
+
+    if(data.length == 0) return <p>Loading data...</p>
 
     return <div className="mainGraphics">
         <div className="info">
             <h2>Gráficos: Encuesta de Permanencia Estudiantil Universitaria</h2>
-            <p>Total de {data.totalSubmissions} encuestas realizadas.</p>
+            <p>Total de <b>{data.totalSubmissions}</b> encuestas realizadas.</p>
         </div>
-        
-        {
-            //data.questions.map(question => <Graphic info={question} key={data.indexOf(question)} />)
-        }
-
-        <div className="question">
-            <h3>Pregunta 1: ...</h3>
-            <p>diagrama de barras</p>
-        </div>
-        <div className="question">
-            <h3>Pregunta 2: ...</h3>
-            <p>diagrama de barras</p>
-        </div>
+        { data.questions.map(question => <Graphic info={question} key={data.questions.indexOf(question)} />) }
+        <pre onClick={() => navigate('/')}>Volver al formulario</pre>
     </div>
 }
 

@@ -11,13 +11,14 @@ import UserValidation from "./../Components/UserValidation"
 import Questions from "./../Components/Questions"
 import Banner from "../Components/Utilities/Banner"
 // Images
-import done from './../images/done.png'
-import cancel from './../images/cancel.png'
+import done from './../images/done.webp'
+import cancel from './../images/cancel.webp'
 
 const MainPage = () => {
   const navigate = useNavigate()
   const [ send, setSend ] = useState(false);
   const [ succesful, setSuccesful ] = useState(false);
+  const [ errorMessage, setErrorMessage ] = useState('')
 
   const { 
     register, 
@@ -27,20 +28,23 @@ const MainPage = () => {
    } = useForm()
 
   const onSubmit = handleSubmit(data => {
+    setSend(true)
+
     axios
       .post("https://encuesta-matematicas-para-la-informatica-production.up.railway.app/api/response", data)
       .then(r => {
         console.log(r)
 
-        setSend(true)
         setSuccesful(true)
         reset()
+        window.scrollTo({ top: 0, behavior: "smooth" })
       })
       .catch(error => {
         console.error("No se pudo realizar la solicitud POST con éxito")
         console.error(error)
 
-        setSuccesful(true)
+        setErrorMessage(error.message)
+        setSuccesful(false)
       })
   })
 
@@ -64,7 +68,7 @@ const MainPage = () => {
                     ?
                     <Banner img={done} title="Enviado Correctamente." message="Tus datos fueron enviados de manera exitosa." setSuccesful={setSuccesful} setSend={setSend} />
                     :
-                    <Banner img={cancel} title="Error al Enviar los Datos." message="Tus datos no pudieron ser enviados de forma exitosa." setSuccesful={setSuccesful} setSend={setSend} />
+                    <Banner img={cancel} title="Error al Enviar los Datos." message={errorMessage} setSuccesful={setSuccesful} setSend={setSend} />
                 }
             </>
         }

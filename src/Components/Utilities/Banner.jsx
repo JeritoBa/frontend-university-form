@@ -5,7 +5,7 @@ const Banner = ({ img, title, message, setSuccesful, setSend }) => {
     const navigate = useNavigate()
 
     return <div className="banner">
-        <img src={img} alt={title} />
+        <img src={img} alt={title} loading="lazy" />
         <div>
             <h2>{title}</h2>
             <p>{message}</p>

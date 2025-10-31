@@ -15,6 +15,8 @@ const Graphic = ({ info }) => {
                 return "Pregunta 3: Cuando enfrentas dificultades económicas, ¿cuál suele ser tu principal estrategia?"
             case "q4": 
                 return "Pregunta 4: En cuanto a tu salud mental durante la universidad, ¿cómo la describirías?"
+            case "q5":
+                return "Pregunta 5: ¿Qué tipo de apoyo consideras más necesario?"
             default:
                 return "Question doesn't exists"
 
