@@ -1,0 +1,265 @@
+html, body, div#root {
+    width: 100%;
+}
+
+/* Background Pattern */
+
+html {
+    background-color: #fff;
+    opacity: 1;
+    background: linear-gradient(135deg, #F2F4F755 25%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(225deg, #F2F4F7 25%, transparent 25%) -24px 0/ 48px 48px, linear-gradient(315deg, #F2F4F755 25%, transparent 25%) 0px 0/ 48px 48px, linear-gradient(45deg, #F2F4F7 25%, #fff 25%) 0px 0/ 48px 48px;
+}
+
+/* General Definitions */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4 {
+    color: #0866FF;
+}
+
+/* Class Names */
+
+.mainApp {
+    background-color: #0866FF; /*233, 253, 251 LIGHTER*/
+    width: 50%;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 1px 16px 32px -2px rgba(0,0,0,0.75);
+    color: #333333;
+    opacity: 100%;
+}
+
+@media (max-width: 768px) { /* Para dispositivos menores a 768px */
+    .mainApp {
+        width: 70%;
+        padding: 2rem;
+    }
+}
+
+.errSpan {
+    display: block;
+    color: rgb(131, 7, 7);
+    font-size: small;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+/* Welcome Banner */
+
+.mainApp .welcomeBanner {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: 1px 16px 32px -12px rgba(0,0,0,0.75);
+}
+
+.mainApp .welcomeBanner h1 {
+    text-align: center;
+    font-size: 1.95rem;
+}
+
+.mainApp .welcomeBanner p {
+    font-size: 1.1rem;
+}
+
+/* User Validation */
+
+.mainApp .userValidation {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 16px 32px -12px rgba(0,0,0,0.75);
+}
+
+.mainApp .userValidation input {
+    width: 90%;
+    height: 2.5rem;
+    border: 0.1px #cfcccc solid;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-top: 0.2rem;
+    margin-left: 0;
+}
+
+.mainApp .userValidation label {
+    font-size: 1.1rem;
+}
+
+/* Main Questions */
+
+.mainApp .mainQuestions {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 16px 32px -12px rgba(0,0,0,0.75);
+}
+
+.mainApp .mainQuestions .question {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.mainApp .mainQuestions .question .option {
+    margin-bottom: 1rem;
+}
+
+.mainApp .mainQuestions .question .option:last-child {
+    margin-bottom: 3rem;
+}
+
+.mainApp .mainQuestions .question .option label {
+    margin-left: 0.4rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .mainApp .mainQuestions .question {
+        padding: 0;
+    }
+}
+
+/* Send Button */
+
+.mainApp .sendButton {
+    display: block;
+    background-color: #36A420;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+}
+
+.mainApp .sendButton:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Graphics Page Redirection */
+
+.mainApp pre {
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.mainApp pre:hover {
+    cursor: pointer;
+}
+
+/* Banner */
+
+.mainApp .banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 16px 40px 18px rgba(0,0,0,0.75);
+}
+
+.mainApp .banner img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.mainApp .banner div {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mainApp .banner div  h2 {
+    margin-bottom: 0;
+}
+
+.mainApp .banner div p {
+    margin-top: 0.3rem;
+}
+
+.mainApp .banner button {
+    background-color: #36A420;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    width: 30%;
+    height: 3rem;
+}
+
+.mainApp .banner button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.mainApp .banner pre {
+    color: #000;
+    font-size: small;
+}
+
+/* GRAPHICS PAGE CSS */
+
+.mainGraphics {
+    background-color: rgb(255, 255, 255); /*233, 253, 251 LIGHTER*/
+    width: 30%;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 1px 16px 32px -2px rgba(0,0,0,0.75);
+    color: #333333;
+    opacity: 100%;
+}
+
+@media (max-width: 768px) { /* Para dispositivos menores a 768px */
+    .mainGraphics {
+        width: 70%;
+        padding: 2rem;
+    }
+}
+
+/* Preguntas */
+
+.mainGraphics .question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainGraphics .question .chart-container {
+    width: 20rem;
+    height: 20rem;
+}

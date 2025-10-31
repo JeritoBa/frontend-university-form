@@ -1,0 +1,134 @@
+[
+    {
+        "questionId": "q1",
+        "question": "1. ¿Cuál consideras que es el principal obstáculo que enfrentas durante tu formación universitaria?",
+        "options": [
+                {
+                    "value": "ECONOMICOS",
+                    "text": "La falta de recursos económicos."
+                },
+                {
+                    "value": "SOBRECARGA_ESTRES",
+                    "text": "La sobrecarga académica y el estrés acumulado."
+                },
+                {
+                    "value": "EQUILIBRIO_ESTUDIO_TRABAJO_VIDA",
+                    "text": "La dificultad para equilibrar estudio, trabajo y vida personal."
+                }, 
+                {
+                    "value": "FALTA_APOYO_EMOCIONAL",
+                    "text": "La falta de apoyo emocional o motivación."
+                }
+            ]
+    },
+    {
+        "questionId": "q2",
+        "question": "2. ¿Qué factor afecta más tu rendimiento académico?",
+        "options": [
+            {
+                "value": "FALTA_MATERIALES",
+                "text": "No contar con los materiales o herramientas necesarias."
+            },
+            {
+                "value": "ESTRES_ANSIEDAD",
+                "text": "Problemas de concentración por estrés o ansiedad."
+            },
+            {
+                "value": "FALTA_TIEMPO",
+                "text": "Falta de tiempo para estudiar debido al trabajo u otras responsabilidades."
+            },
+            {
+                "value": "DESMOTIVACION",
+                "text": "Desmotivación o falta de interés en algunas materias."
+            }
+        ]
+    },
+    {
+        "questionId": "q3",
+        "question": "3. Cuando enfrentas dificultades económicas, ¿cuál suele ser tu principal estrategia?",
+        "options": [
+            {
+                "value": "TRABAJO_TEMPORAL",
+                "text": "Buscar trabajos temporales o de medio tiempo."
+            },
+            {
+                "value": "REDUCIR_GASTOS",
+                "text": "Reducir gastos personales o familiares."
+            },
+            {
+                "value": "APOYO_FAMILIAR",
+                "text": "Pedir apoyo a familiares o amigos."
+            },
+            {
+                "value": "DEJAR_ESTUDIOS",
+                "text": "Dejar temporalmente los estudios."
+            }
+        ]
+    },
+    {
+        "questionId": "q4",
+        "question": "4. En cuanto a tu salud mental durante la universidad, ¿cómo la describirías?",
+        "options": [
+            {
+                "value": "ESTRES_AGOTAMIENTO",
+                "text": "Me siento constantemente estresado y agotado."
+            },
+            {
+                "value": "ALTIBAJOS_EQUILIBRIO",
+                "text": "Tengo altibajos, pero logro mantener el equilibrio."
+            },
+            {
+                "value": "AYUDA_PROFESIONAL",
+                "text": "He buscado ayuda profesional o apoyo psicológico."
+            },
+            {
+                "value": "ESTABLE_MOTIVADO",
+                "text": "Me siento emocionalmente estable y motivado."
+            }
+        ]
+    },
+    {
+        "questionId": "q5",
+        "question": "5. ¿Qué tipo de apoyo consideras más necesario?",
+        "options": [
+            {
+                "value": "BECAS_APOYOS",
+                "text": "Becas y apoyos económicos."
+            },
+            {
+                "value": "SALUD_MENTAL",
+                "text": "Programas de salud mental y bienestar emocional."
+            },
+            {
+                "value": "FLEXIBILIDAD_METODOS",
+                "text": "Flexibilidad académica y mejores métodos de enseñanza."
+            },
+            {
+                "value": "ACTIVIDADES_INTEGRACION",
+                "text": "Actividades extracurriculares y espacios de integración social."
+            }
+        ]
+    },
+    {
+        "questionId": "q6",
+        "question": "5. ¿Qué tipo de apoyo consideras más necesario?",
+        "options": [
+            {
+                "value": "BECAS_APOYOS",
+                "text": "Becas y apoyos económicos."
+            },
+            {
+                "value": "SALUD_MENTAL",
+                "text": "Programas de salud mental y bienestar emocional."
+            },
+            {
+                "value": "FLEXIBILIDAD_METODOS",
+                "text": "Flexibilidad académica y mejores métodos de enseñanza."
+            },
+            {
+                "value": "ACTIVIDADES_INTEGRACION",
+                "text": "Actividades extracurriculares y espacios de integración social."
+            }
+        ]
+    }
+]
